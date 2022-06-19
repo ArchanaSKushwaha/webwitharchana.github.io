@@ -1,0 +1,513 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-family: montserrat;
+}
+header{
+      width: 100vw;
+      height: 100vh;
+  /*background-image: linear-gradient(rgba(0,0,0.3),rgba(0,0,0.5)) url('img/pexels-tranmautritam-245032.jpg');*/
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/office-932926_1920.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow:hidden;
+  animation-name: img;
+  animation-duration: 6s;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  transition-property: background-image;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+@keyframes img{
+  0%{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/office-932926_1920.jpg');}
+ 10%{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/christina-wocintechchat-com-p0qKsW3uqA4-unsplash.jpg');}
+ 20%{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/jonas-leupe-7RI1YkIbCDI-unsplash.jpg');}
+ 30%{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/pexels-christina-morillo-1181661.jpg');}
+ 40%{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/office-932926_1920.jpg');}
+ 50%{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/christina-wocintechchat-com-p0qKsW3uqA4-unsplash.jpg');}
+ 60%{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/jonas-leupe-7RI1YkIbCDI-unsplash.jpg');}
+ 70%{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/pexels-christina-morillo-1181661.jpg');}
+ 80%{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/office-932926_1920.jpg');}
+ 90%{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/christina-wocintechchat-com-p0qKsW3uqA4-unsplash.jpg');}
+ 100%{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/home-office-4996834_1920.jpg');}
+}
+nav{
+	/*background: #0082e6;*/
+	height: 80px;
+    width: 100%;
+}
+label.logo{
+font-family: 'fascrinate',cursive;
+color:white;
+font-weight: 100;
+float: right;
+font-size: 1.0rem;
+margin-top: 20px;
+margin-right: 80px;
+text-align: center;
+height: auto;
+/*line-height: 80px;
+padding: 0 100px;*/
+text-shadow: 1px 3px 0 #969696, 1px 4px 5px #aba8a8, -9px -19px 5px rgba(206,89,55,0);
+}
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	float: left;
+	margin-right: 20px;
+}
+/*nav li{
+	float: left;
+}*/
+nav ul li{
+	font-family: 'Lobster', cursive;
+	font-weight: lighter;
+    font-size: 1rem;
+    /*display: block;*/
+    color: white;
+    text-align: center;
+    margin-left: 30px;
+    padding: 14px 16px;
+    text-decoration: none;
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	/*font-size: 17px;*/
+	padding: 7px 13px;
+	border-radius: 3px;
+	/*text-transform: uppercase;*/
+    
+}
+nav ul li a: hover{
+ color: #00b894;
+  border-bottom: 2px solid #fff;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+/*a.active,a:hover{
+	background: #1b9bff;
+	color: #00b894;
+	transition: .5s;
+	text-decoration: none;
+	
+}*/
+.checkbtn{
+	font-size: 50px;
+	color: white;
+	float: left;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+}
+main h3{
+	padding-top: 300px;
+   font-family: 'Ravi Prakash', cursive;
+   font-size: 1.5rem;
+}
+main h1{
+  font-family: 'Ravi Prakash', cursive;
+  font-size: 2rem;
+  font-weight: lighter;
+  
+
+}
+.change_content:after{
+   content: '';
+   color: #00b894;
+   animation: unearth;
+  animation-duration: 2s;
+  animation-timing-function: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;}
+
+@keyframes unearth{
+  from{content:"search engine"};
+  to{content:"search engine";}
+
+}
+main p{
+  font-family: 'Caveat', cursive;
+}
+
+section h2{
+	color: #00b894;
+	text-shadow: 1px 3px 0 #969696, 1px 4px 5px #aba8a8, -9px -19px 5px rgba(206,89,55,0);
+}
+
+.learning_ideas{
+  width: 100vw;
+  height: 80vh;
+  background-image: linear-gradient(rgb(0,0,0,0.6),rgba(0,0,0,0.6)),url('img/andrew-neel-fkalryO4dUI-unsplash.jpg');
+  background-size: 100% 100%;
+   padding-right: 40px;
+}
+
+.study_material{
+  width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: white;
+}
+
+}
+.study_material h1{
+
+  font-family: 'Ravi Prakash', cursive;
+  font-size: 2rem;
+  font-weight: lighter;
+  transition-property: content;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+
+}
+.study:after{
+   content: '';
+   color: #00b894;
+   animation: studytime;
+  animation-duration: 1s;
+  animation-timing-function: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes  studytime{
+    0%{content: "html";}
+    20%{content: "bootstrap";}
+    35%{content: "css";}
+    50%{content: "javascript";}
+    60%{content: "php";}
+    80%{content: "sass";}
+    100%{content: "css3";}
+}
+
+section a.btn{
+  /*display: grid;
+  place-items:center;*/
+  /*float: bottom;*/
+
+    text-transform: capitalize;
+    background: #fff;
+    color:#00b894;
+    padding-top: 5px; 
+    transition: all .5s ease;
+}
+section a.btn:hover{
+    background: #00b894;
+    color:#fff;
+}
+.main-about{
+ height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+.about h2{
+	font-family: 'Fredoka', sans-serif;
+	color: #00b894;
+	text-shadow: 1px 3px 0 #969696, 1px 4px 5px #aba8a8, -9px -19px 5px rgba(206,89,55,0);
+}
+.about h1{
+  margin: 20px;
+  text-align: center;
+   background: #00b894;
+   color: #fff;
+  margin-left: 500px;
+   border:2px solid black;
+   width: 50%;
+   font-family: 'RocknRoll One', sans-serif;
+   font-weight: lighter;
+   text-transform:uppercase;  
+}
+
+.about_para{
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  text-align: justify;
+  line-height: 1.7;
+}
+.about_para p{
+  font-size: 1.3rem;
+}
+
+.btntwo{
+  border:2px solid #00b894;
+  border-radius: 40px;
+  text-transform: capitalize;
+    background: #fff;
+    color:#000;
+    margin-right: 15px;
+    transition: all .5s ease;
+}
+.btn:hover{
+  border:2px solid #fff;
+    background: #00b894;
+    color:white;
+}
+.about_img img{
+  width: 90%;
+  height: 60vh;
+  padding: 0;
+  text-align: center;
+}
+
+.footer_style{
+  margin-top: 20px;
+
+  font-family: 'Josefin Sans', sans-serif;
+    /*background:#1abc9c;*/
+    /*background: radial-gradient(rgba(26,188,156,2) 0%, #16a085 28%, rgba(26,188,156,1) 48%);*/
+   background-color: #0A9A87;
+    background-size: 100% 100%;
+  color:white;
+}/*
+#footer{
+
+font-size: 1rem;
+  color:white;
+}
+.contact-list{
+  font-size: 1rem;
+}
+.link h4{
+  font-size: 1rem;
+}
+h4{
+  text-decoration: overline;
+
+}
+
+
+
+
+#media{
+   background:rgba(0,0,0,0.3);
+  text-align: center;
+  border-bottom: 1px solid white;
+   border-top: 1px solid white;
+  text-decoration: none;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   margin-left: 60px;
+   margin-top: 90px;
+   margin-bottom: 100px;
+}
+
+#media a{
+  text-decoration: none;
+  color: white;
+  display: grid;
+  place-items:center;
+}
+
+#media a:hover{
+  color: green;
+  background: white;
+}*/
+/*media */
+
+@media(max-width: 952px){
+
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	} 
+	nav ul{
+		background:#00b894;
+		/*background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/back.jpg');*/
+	}
+	nav ul li a{
+		background:#00b894;
+		font-size: 16px;
+	}
+	.checkbtn{
+	font-size: 50px;
+	color: white;
+	float: left;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+	padding-left: 40px;
+}
+#check{
+	display: none;
+}
+
+main h3{
+   font-size: 1rem;
+}
+main h1{
+  font-size: 1.4rem;
+}
+section a.btn{
+    text-transform: capitalize;
+    background: #fff;
+    color:#00b894;
+    padding-top: 5px; 
+    transition: all .5s ease;
+}
+section a.btn:hover{
+    background: #00b894;
+    color:#fff;
+}
+.learning_ideas{
+  height: 70vh;
+   margin-top: 1400px;
+   padding-left: 50px;
+}
+
+.study_material h1{
+  font-size: 1.4rem;
+}
+.about h2{
+	padding-top: 160px;
+	/*padding-left: 60px;*/
+	margin-left: 150px;
+	font-size: 2rem;
+	margin-top: 600px;
+	font-family: 'Fredoka', sans-serif;
+	color: #00b894;
+	text-shadow: 1px 3px 0 #969696, 1px 4px 5px #aba8a8, -9px -19px 5px rgba(206,89,55,0);
+}
+.my-3{
+  padding-bottom: 800px;
+}
+.footer_style{
+  padding-bottom:200px;
+}
+/*.footer_style{
+height: 100%;
+margin-bottom: 5100px;
+}
+#media{
+  margin-left: 50px;
+  margin-right: 50px;
+
+  padding-left: 200px;
+  padding-right: 200px;
+  display: block;
+  box-sizing: border-box;
+}
+
+*/
+@media(max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size:20px;
+	}
+	/*a:hover,a.active{
+		background: none;
+		color: #0082e6;
+	}*/
+	#check:checked ~ ul{
+		left: 0;
+	}
+	main h3{
+   font-size: 1.2rem;
+}
+main h1{
+  font-size: 1.0rem;
+}
+ .my-3{
+  padding-bottom: 800px;
+}
+
+/*.footer_style{
+height: 100%;
+margin-bottom: 5000px;
+}
+#media{
+  margin-left: 50px;
+  margin-right: 50px;
+
+  padding-left: 200px;
+  padding-right: 200px;
+  display: block;
+  box-sizing: border-box;
+}
+
+*//*#footer{
+margin-top: 300px;
+  
+}*/
+@media(max-width: 952px){
+.my-3{
+  padding-bottom: 800px;
+}
+.footer_style{
+  padding-bottom:200px;
+}
+}
+@media(max-width: 858px){
+  .my-3{
+  padding-bottom: 800px;
+}
+.footer_style{
+  padding-bottom:200px;
+}
+}
+
+
+section{
+		background: url('Gray Simple Samina Hadid YouTube Thumbnail.png') no-repeat;
+		background-size: cover;
+		height: calc(100vh - 80px);
+	}
+
+
+
+
